@@ -1,0 +1,168 @@
+section 1
+
+1. why you should care about react
+2. setting up
+3. jsx
+4. costum components
+5. styling
+
+secion 2 data-driven
+
+1. props > menambahkan parameter seperti rest api > passing data
+2. Array map to jsx (Array.prototypr.map)
+
+
+
+
+
+
+
+
+
+-------------format database
+
+Berikut adalah informasi singkat untuk masing-masing anime yang kamu minta:
+
+---
+
+### 1. **Dragon Ball (ドラゴンボール)**
+
+* **Tanggal Rilis:** 26 Februari 1986 (anime pertama)
+* **Deskripsi Singkat/Sinopsis:**
+  Petualangan Goku dimulai saat ia mencari bola naga yang dapat mengabulkan permintaan. Pertarungan demi pertarungan, ia tumbuh menjadi salah satu petarung terkuat di alam semesta.
+* **Pembuat Manga:** Akira Toriyama
+* **Studio Anime:** Toei Animation
+* **Rating:** 8.0 (MyAnimeList)
+
+---
+
+### 2. **One Piece (ワンピース)**
+
+* **Tanggal Rilis:** 20 Oktober 1999
+* **Deskripsi Singkat/Sinopsis:**
+  Monkey D. Luffy berlayar untuk menjadi Raja Bajak Laut, mencari harta karun legendaris “One Piece”, sambil membentuk kru dan menghadapi berbagai musuh kuat.
+* **Pembuat Manga:** Eiichiro Oda
+* **Studio Anime:** Toei Animation
+* **Rating:** 8.7 (MyAnimeList)
+
+---
+
+### 3. **Black Clover (ブラッククローバー)**
+
+* **Tanggal Rilis:** 3 Oktober 2017
+* **Deskripsi Singkat/Sinopsis:**
+  Di dunia sihir, Asta adalah anak tanpa kekuatan sihir, tapi bermimpi menjadi Kaisar Sihir. Bersama saingannya, Yuno, ia bertarung melawan kekuatan gelap.
+* **Pembuat Manga:** Yūki Tabata
+* **Studio Anime:** Studio Pierrot
+* **Rating:** 8.1 (MyAnimeList)
+
+---
+
+### 4. **Sakamoto Days (サカモトデイズ)** *(Catatan: Belum tayang anime per Juni 2025)*
+
+* **Tanggal Rilis Anime:** *Belum dirilis — diumumkan akan tayang pada tahun 2025*
+* **Deskripsi Singkat/Sinopsis:**
+  Sakamoto, mantan pembunuh bayaran legendaris, kini hidup damai sebagai pemilik toko. Namun, masa lalunya terus membayanginya dan memaksanya kembali beraksi.
+* **Pembuat Manga:** Yuto Suzuki
+* **Studio Anime:** TMS Entertainment (diumumkan)
+* **Rating Manga:** 8.3 (MyAnimeList)
+
+---
+
+### 5. **Fire Force (炎炎ノ消防隊, En'en no Shōbōtai)**
+
+* **Tanggal Rilis:** 6 Juli 2019
+* **Deskripsi Singkat/Sinopsis:**
+  Shinra Kusakabe bergabung dengan pasukan pemadam khusus untuk melawan "Infernals"—manusia yang berubah menjadi api—dan mengungkap kebenaran di balik kekuatannya.
+* **Pembuat Manga:** Atsushi Ōkubo
+* **Studio Anime:** David Production
+* **Rating:** 7.7 (MyAnimeList)
+
+---
+
+Kalau kamu ingin dibuatkan dalam format gambar infografik atau post media sosial, tinggal beri tahu ya!
+
+
+
+--------------------Array
+
+     <div className=" relative justify-around ms-1 flex flex-wrap">
+        <MyCard
+            img="src\assets\gambar\Black Clover Shounen Shoump.jfif"
+            nama="Black Clover"
+            kanji="ブラッククローバー"
+            date="3 Oktober 2017"
+            mangaka="Yuki Tabata"
+            rating="8.1 (MyAnimeList)"
+            desk="  Di dunia sihir, Asta adalah anak tanpa kekuatan sihir, tapi bermimpi menjadi Kaisar Sihir. Bersama saingannya, Yuno, ia bertarung melawan kekuatan gelap."
+        
+        />
+        <MyCard
+            img="src\assets\gambar\sakamoto days ch_ 113 color page.jfif"
+            nama="Sakamoto Days"
+            kanji="サカモトデイズ"
+            date="3 juni 2025"
+            mangaka="Yuto Suzuki"
+            rating=" 8.3 (MyAnimeList)"
+            desk="Sakamoto, mantan pembunuh bayaran legendaris, kini hidup damai sebagai pemilik toko. Namun, masa lalunya terus membayanginya dan memaksanya kembali ."
+        
+        />
+        <MyCard
+            img="src\assets\gambar\fire.jfif"
+            nama="Fire Force"
+            kanji="炎炎ノ消防隊"
+            date=" 6 Juli 2019"
+            mangaka="Atsushi Ōkubo"
+            rating=" 7.7 (MyAnimeList)"
+            desk="Shinra Kusakabe bergabung dengan pasukan pemadam khusus untuk melawan Infernals—manusia yang berubah menjadi api—dan mengungkap"
+        
+        />
+        <MyCard
+            img="src\assets\gambar\download (1).jfif"
+            nama="One Piece"
+            kanji="ワンピース"
+            date="20 Oktober 1999"
+            mangaka=" Eiichiro Oda"
+            rating="8.7 (MyAnimeList)"
+            desk=" Monkey D. Luffy berlayar untuk menjadi Raja Bajak Laut, mencari harta karun legendaris “One Piece”, sambil membentuk kru dan menghadapi berbagai musuh kuat."
+        
+ 
+
+ -----------------------recap section 2
+ 01 why reusability is important
+ 02 props [paramter function in react]
+ 03 Creating component from an array of data
+ 
+
+ ----------------------- section 3
+ membuat interaktif web in react
+ 01 static websites
+ 02 Reusable component
+ |
+ |
+ | static web pages = read only like [blogs][news sites][etc]
+ | Dynamic Web Apps 01 read and wrie, display your data [bank website][Airbnb][eCommerce sites]
+
+
+ projek = Cheff Claude
+
+| props and state
+|
+| props sama kayak parametert di function 
+nunmber(2, 5)
+
+| satte refers any value, funtion of state. re render if  ada yang baru aray state value.
+< MyBlog one="2" />
+
+lokal varible tidak akan render
+react.useState() 
+
+dalam use.state jangan memodifikasi yang lama 
+
+angka = angka + 1 // salah karena ini memodifikasi
+
+angka + 1 // yang benar bukan memodikasi tapi menambahkan hasil dari yang lama
+
+| ternary option in react
+
+complake state object
