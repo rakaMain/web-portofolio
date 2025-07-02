@@ -12,7 +12,9 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
+  background-image: url('/src/assets/gambar/Desain tanpa judul_20250702_082703_0000.png');
+  background-size: 150%;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
