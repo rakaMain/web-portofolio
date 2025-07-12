@@ -15,10 +15,10 @@ import "remixicon/fonts/remixicon.css";
  
 function Mycode(){
   return(
-    <div className=" flex-col justify-center gap-1.5 ">
+    <div className=" flex-col justify-center gap-1.5 bg-white ">
       <MyHead />
       <MyMainSec />
-      <div className="w-3/4 mx-auto mt-6" id="Pengalaman">
+      <div className="w-4/5 mx-auto mt-6" id="Pengalaman">
         <p className="ms-2 text-xl ">Pengalaman</p>
         <CardPengalaman
           judul="IT Support"
@@ -27,7 +27,7 @@ function Mycode(){
         />
 
       </div>
-      <div className="w-3/4 mx-auto mt-6" id="skills">
+      <div className="w-4/5 mx-auto mt-6" id="skills">
         <p className="ms-2 text-xl ">skills</p>
         <CardSkills 
           judul="Network"
@@ -50,11 +50,11 @@ function Mycode(){
           img='./src/assets/gambar/linux.svg'   
         />
       </div>
-      <div className="w-3/4 mx-auto mt-6" id="skills">
+      <div className="w-4/5 mx-auto mt-6" id="skills">
         <p className="ms-2 text-xl ">Project</p>
         <MyProject />
       </div>
-      <div className="w-3/4 mx-auto mt-6" id="Pengalaman">
+      <div className="w-4/5 mx-auto mt-6" id="Pengalaman">
         <p className="ms-2 text-xl ">Pendidikan</p>
         <CardPengalaman
           judul="SMKN 1 CIJULANG"
