@@ -1,6 +1,6 @@
-import { createRoot } from "react-dom/client"
+import ReactDom from "react-dom/client"
 import MyHead from './header';
-import Navigation from "./navgation";
+
 
 // komponen index.html
 import MyMainSec from './index-jsx/body'
@@ -11,17 +11,19 @@ import "remixicon/fonts/remixicon.css";
 
 
  
-function Mycode(){
+function Mycoder(){
   return(
     <div className=" flex-col justify-center gap-1.5 bg-white relative">
       <MyHead />
       <MyMainSec />
-      <Navigation />
+     
     </div>
     
   )
 }
-const root = createRoot(document.getElementById("root"))
+const root = ReactDom.createRoot(document.getElementById("root"))
 root.render(
-  Mycode()
+  Mycoder()
 ) 
+
+console(root)

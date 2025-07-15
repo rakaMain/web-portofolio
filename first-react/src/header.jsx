@@ -36,16 +36,11 @@ export default function MyHead(){
           </div>
 
           <div>
-
           </div>
-
 
         </div>
 
         <div className=" w-full h-40 flex p-2 bg-[#E6FF28] rounded-xl">
-         <MiniCard 
-            name = 'Instagram'
-         />
         </div>
     </div>
     </>    
