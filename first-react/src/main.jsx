@@ -16,7 +16,6 @@ function Mycoder(){
     <div className=" flex-col justify-center gap-1.5 bg-white relative">
       <MyHead />
       <MyMainSec />
-     
     </div>
     
   )
