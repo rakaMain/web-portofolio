@@ -9,11 +9,19 @@ export default function MyHead() {
   return (
     <>
       {/* HEADER */}
-      <header className="
+      <header className=" container  rounded-b-2xl
         fixed top-0 z-50 w-full h-18 flex items-center justify-end
-        px-6 gap-3 bg-[#FCFFF2] border-b border-neutral-100
+        px-6 gap-3 bg-[#FCFFF2] sm:relative mx-auto border-b border-neutral-100
       ">
         <i className="ri-home-6-fill scale-200 me-auto" />
+
+        <div className="hidden md:flex w-auto gap-x-10 me-10 ">
+          <ul className="text-black ">home</ul>
+          <ul className="text-black">about</ul>
+          <ul className="text-black">service</ul>
+          <ul className="text-black">work</ul>
+        </div>
+
 
         <div className="w-30 bg-[#E6FF28] rounded-md h-10 flex items-center justify-center gap-x-2 me-2">
           <p>Lets Talk</p>
@@ -21,7 +29,7 @@ export default function MyHead() {
         </div>
 
         <i
-          className={shown ? "ri-close-line scale-200" : "ri-menu-line scale-200"}
+          className={shown ? "ri-close-line scale-200 md:hidden" : "ri-menu-line scale-200 md:hidden"}
           onClick={toggleNav}
         />
       </header>
@@ -29,16 +37,16 @@ export default function MyHead() {
       {/* NAV-BAR: selalu ter-mount, class berganti untuk animasi */}
       <div
         id="nav-bar"
-        className={`
+        className={` 
           fixed top-0 left-0 z-40 w-full h-full bg-white text-black
-          flex flex-col pt-20 px-6 gap-3
+          flex flex-col pt-20 px-6 gap-3 
 
           /* animasi transform + opacity */
           transition-all duration-300 ease-in-out
 
           /* ketika open */
           ${shown 
-            ? " translate-x-0 opacity-100 pointer-events-auto" 
+            ? " translate-x-0 opacity-98 pointer-events-auto" 
             /* ketika close */
             : " -translate-x-full opacity-0 pointer-events-none"
           }
@@ -52,14 +60,15 @@ export default function MyHead() {
         {/* Menu */}
         <nav className="flex flex-col gap-y-10 mt-4">
           {["Home", "About", "Service", "Work"].map((item) => (
-            <div key={item} className="border-b-2 border-gray-200">
+            <div key={item} className="border-b-2 flex justify-between border-gray-200">
               <ul className="text-xl">{item}</ul>
+              <i className="ri-arrow-drop-down-fill scale-180"></i>
             </div>
           ))}
         </nav>
 
         {/* MiniCards */}
-        <div className="w-full h-40 flex flex-wrap gap-2 bg-amber-200 items-start justify-start p-2 mt-10 rounded-xl">
+        <div className="w-full h-auto flex flex-wrap gap-2  p-2 mt-10 rounded-xl">
           <MiniCard name="Instagram" icon="ri-instagram-fill scale-200 m-auto" />
           <MiniCard name="Linkedin"  icon="ri-linkedin-fill scale-200 m-auto" />
           <MiniCard name="Youtube"   icon="ri-youtube-fill scale-200 m-auto" />

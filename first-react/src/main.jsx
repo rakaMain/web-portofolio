@@ -13,7 +13,7 @@ import "remixicon/fonts/remixicon.css";
  
 function Mycoder(){
   return(
-    <div className=" flex-col justify-center gap-1.5 bg-white relative">
+    <div className=" flex-col  w-full justify-center gap-1.5 bg-white relative">
       <MyHead />
       <MyMainSec />
     </div>
