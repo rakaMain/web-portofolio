@@ -1,5 +1,6 @@
 import MiniCardMain from "../Card/minicard"
 import MediumCard from "../Card/mediumcard"
+import SkillCard from "../Card/cardskill"
 
 
 export default function MyMain(params) {
@@ -13,22 +14,29 @@ export default function MyMain(params) {
             <p className=" text-[35px] mb-4 ">
                 Hello, I am Freelance and Educator - <span className=" text-[#E6FF28]">network, devOps and Python</span>
             </p>
-            <div className="w-full h-45 mt-5 rounded-2xl bg-neutral-50">
+            <div className="w-full h-45 mt-5 rounded-2xl bg-white border-1 border-neutral-200">
             </div>
 
             <div className="w-full h-auto mt-5 pt-5 rounded-2xl ">
              <p className=" text-[25px] mb-4 ">
                 Who am i ?
             </p>
-            <div className="h-80 w-full rounded-2xl bg-neutral-50"></div>
+            <div className="h-80 w-full rounded-2xl bg-white border-1 border-neutral-200"></div>
             </div>
 
-            <div className="w-full h-100 mt-5 mb-8 rounded-2xl pt-5">
+            <div className="w-full h-auto mt-5  rounded-2xl pt-5">
              <p className=" text-[25px] mb-4 ">
                 Experience 
             </p>
             <MediumCard />
             </div>
+
+            <div className="w-full h-auto mt-6 mb-10 rounded-2xl pt-5">
+            <SkillCard nama="IT Support" />
+            <SkillCard nama="Webdev"/>
+            <SkillCard nama="data sceintis" />
+            </div>
+
         </div>
     )
 }

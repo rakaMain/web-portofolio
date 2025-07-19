@@ -13,7 +13,7 @@ export default function MyHead() {
         fixed top-0 z-50 w-full h-18 flex items-center justify-end
         px-6 gap-3 bg-[#FCFFF2] sm:relative mx-auto border-b border-neutral-100
       ">
-        <i className="ri-home-6-fill scale-200 me-auto" />
+        <img src="src/assets/gambar/2.png" className="h-18 me-auto w-auto" alt="" srcset="" />
 
         <div className="hidden md:flex w-auto gap-x-10 me-10 ">
           <ul className="text-black ">home</ul>
