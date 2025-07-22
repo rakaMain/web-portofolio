@@ -1,7 +1,7 @@
 import MiniCardMain from "../Card/minicard"
 import MediumCard from "../Card/mediumcard"
 import SkillCard from "../Card/cardskill"
-
+import YoutubeCard from "../Card/cardyoutube"
 
 export default function MyMain(params) {
     return(
@@ -18,24 +18,34 @@ export default function MyMain(params) {
             </div>
 
             <div className="w-full h-auto mt-5 pt-5 rounded-2xl ">
-             <p className=" text-[25px] mb-4 ">
-                Who am i ?
-            </p>
+  
             <div className="h-80 w-full rounded-2xl bg-white border-1 border-neutral-200"></div>
             </div>
 
             <div className="w-full h-auto mt-5  rounded-2xl pt-5">
-             <p className=" text-[25px] mb-4 ">
+             <p className=" text-[25px] text-center mb-4 ">
                 Experience 
             </p>
             <MediumCard />
             </div>
 
-            <div className="w-full h-auto mt-6 mb-10 rounded-2xl pt-5">
+            <div className="w-full h-auto mt-6 rounded-2xl pt-5">
             <SkillCard nama="IT Support" />
             <SkillCard nama="Webdev"/>
             <SkillCard nama="data sceintis" />
             </div>
+
+            <div className="w-full h-auto mt-2 mb-10 rounded-2xl pt-5">
+             <p className=" text-[25px] text-center mb-8 ">
+                Not ready for my course? start learning for free
+            </p>
+            <div id="youtube-card" className="flex gap-x-4 overflow-x-auto whitespace-nowrap scroll-smooth p-2 md:overflow-x-visible">
+                <YoutubeCard />
+                <YoutubeCard />
+                <YoutubeCard />
+            </div>
+            </div>
+        
 
         </div>
     )
