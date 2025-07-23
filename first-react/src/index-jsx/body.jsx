@@ -5,7 +5,7 @@ import YoutubeCard from "../Card/cardyoutube"
 
 export default function MyMain(params) {
     return(
-        <div className="w-5/6 mx-auto mt-22  rounded-md relative flex flex-col  text-black">
+        <div className="w-5/6 mx-auto mt-22 sm:mt-30  rounded-md relative flex flex-col  text-black">
             <div className="w-full flex items-center mb-4 mt-3">
                 <MiniCardMain
                     name="BNSP Certified"
@@ -15,10 +15,16 @@ export default function MyMain(params) {
                 Hello, I am Freelance and Educator - <span className="text-[#E6FF28]">network, devOps and Python</span>
             </p>
 
-            <div className="w-full h-45 mt-5 rounded-2xl bg-white border border-neutral-200" />
+            <div className="w-full h-45 md:h-56 mt-5 rounded-2xl bg-white border border-neutral-200" />
 
-            <div className="w-full h-auto mt-5 pt-5 rounded-2xl">
-                <div className="h-80 w-full rounded-2xl bg-white border border-neutral-200" />
+            <div className="w-full h-90 flex flex-col gap-y-3 mt-5 pt-5 rounded-2xl border border-neutral-200">
+                <div className=" w-full flex-1/2  bg-white border-b border-neutral-200">
+                    
+                </div>
+                <div className=" w-full flex-1/3 rounded-2xl flex p-4 bg-white  border-neutral-200" >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, saepe?
+                </div>
+                
             </div>
 
             <div className="w-full h-auto mt-5 rounded-2xl pt-5">
@@ -37,7 +43,7 @@ export default function MyMain(params) {
 
             <div className="w-full h-auto mt-2 mb-10 rounded-2xl pt-5">
                 <p className="text-[25px] text-center mb-8">
-                    Not ready for my course? Start learning for free
+                    Want to learn with me ? check this video
                 </p>
                 <div
                     id="youtube-card"

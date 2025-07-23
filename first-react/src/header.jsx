@@ -9,9 +9,9 @@ export default function MyHead() {
   return (
     <>
       {/* HEADER */}
-      <header className=" container  rounded-b-2xl
+      <header className=" container  xl:rounded-b-2xl
         fixed top-0 z-50 w-full h-18 flex items-center justify-end
-        px-6 gap-3 bg-[#FCFFF2] sm:relative mx-auto border-b border-neutral-100
+        px-6 gap-3 bg-[#FCFFF2]  mx-auto border-b border-neutral-100
       ">
         <img src="src/assets/gambar/2.png" className="h-18 me-auto w-auto" alt="" srcset="" />
 
