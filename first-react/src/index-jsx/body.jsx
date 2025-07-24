@@ -36,9 +36,30 @@ export default function MyMain(params) {
 
             {/* Skills Section reverted to original layout */}
             <div className="w-full h-auto mt-6 rounded-2xl pt-5 space-y-4">
-                <SkillCard nama="IT Support" />
-                <SkillCard nama="Webdev" />
-                <SkillCard nama="Data Scientist" />
+                <SkillCard 
+                nama="IT Support" 
+                icon={[' src/assets/gambar/linux.png',
+                        'src/assets/gambar/mikrotik.png',
+                        'src/assets/gambar/mincrosof.png',
+                        'src/assets/gambar/winbox.png']}
+                />
+                <SkillCard 
+                nama="Programer" 
+                icon={[' src/assets/gambar/tailwind.png',
+                        'src/assets/gambar/python.png',
+                        'src/assets/gambar/react.png',
+                        'src/assets/gambar/nodejs.png',
+                        'src/assets/gambar/mysql.png']}
+                />
+                <SkillCard 
+                nama="Devops" 
+                icon={[' src/assets/gambar/vmware.png',
+                        'src/assets/gambar/ansible.png',
+                        'src/assets/gambar/docker.png',
+                        'src/assets/gambar/nginx.png',
+                        ]}
+                />
+
             </div>
 
             <div className="w-full h-auto mt-2 mb-10 rounded-2xl pt-5">
