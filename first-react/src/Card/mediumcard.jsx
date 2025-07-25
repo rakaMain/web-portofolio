@@ -7,10 +7,7 @@ export default function MediumCard(value){
                    
                 </div>
                 <div className="h-12 px-2 mb-1 w-full flex items-center border-neutral-200">
-                    <div className="h-7 w-7 bg-[#E6FF28] rounded-md me-2"></div>
-                    <div className="h-7 w-7 bg-[#E6FF28] rounded-md me-2"></div>
-                    <div className="h-7 w-7 bg-[#E6FF28] rounded-md me-2"></div>
-
+                
                 </div>
             </div>
             <div className=" overflow-hidden h-1/2  items-start w-full p-4 relative flex flex-col  ">

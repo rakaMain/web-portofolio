@@ -3,6 +3,8 @@ import MediumCard from "../Card/mediumcard"
 import SkillCard from "../Card/cardskill"
 import YoutubeCard from "../Card/cardyoutube"
 
+import SubYt from "../data/datayoutube"
+
 export default function MyMain(params) {
     return(
         <div className="w-5/6 mx-auto mt-22 sm:mt-30  rounded-md relative flex flex-col  text-black">
@@ -70,15 +72,21 @@ export default function MyMain(params) {
                     id="youtube-card"
                     className="flex flex-nowrap gap-x-4 overflow-x-auto scroll-smooth whitespace-nowrap p-2 scrolling-touch"
                 >
-                    <div className="flex-shrink-0">
-                        <YoutubeCard />
-                    </div>
-                    <div className="flex-shrink-0">
-                        <YoutubeCard />
-                    </div>
-                    <div className="flex-shrink-0">
-                        <YoutubeCard />
-                    </div>
+          
+        {/* <nav className="flex flex-col gap-y-10 mt-4">
+          {["Home", "About", "Service", "Work"].map((item) => (
+            <div key={item} className="border-b-2 flex justify-between border-gray-200">
+              <ul className="text-xl">{item}</ul>
+              <i className="ri-arrow-drop-down-fill scale-180"></i>
+            </div>
+          ))}
+        </nav> */}
+                    {SubYt.map((n) => (
+                        <div className="flex-shrink-0">
+                            <YoutubeCard name={n["judul"]} gambar={n["gambar"]}/>
+                        </div>
+                    ))}
+        
                 </div>
             </div>
         </div>
