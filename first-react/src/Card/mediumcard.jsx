@@ -12,9 +12,9 @@ export default function MediumCard(value){
             </div>
             <div className=" overflow-hidden h-1/2  items-start w-full p-4 relative flex flex-col  ">
                 <div className="flex  items-center w-full">
-                    <p className=" text-xl pb-2">Judul,</p> <p className=" ms-3 ">magang</p><p className="ms-auto text-sm text-gray-400">2025</p>
+                    <p className=" text-xl pb-2">UNPAD,</p> <p className=" ms-3 ">magang</p><p className="ms-auto text-sm text-gray-400">2025</p>
                 </div>
-                <p className="text-sm ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, et!</p>
+                <p className="text-sm opacity-80">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, et!</p>
             </div>
         </div>
         </>

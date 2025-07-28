@@ -39,14 +39,14 @@ export default function MyMain(params) {
             {/* Skills Section reverted to original layout */}
             <div className="w-full h-auto mt-6 rounded-2xl pt-5 space-y-4">
                 <SkillCard 
-                nama="IT Support" 
+                nama="Your IT Support" 
                 icon={[' src/assets/gambar/linux.png',
                         'src/assets/gambar/mikrotik.png',
                         'src/assets/gambar/mincrosof.png',
                         'src/assets/gambar/winbox.png']}
                 />
                 <SkillCard 
-                nama="Programer" 
+                nama="Your Programer" 
                 icon={[' src/assets/gambar/tailwind.png',
                         'src/assets/gambar/python.png',
                         'src/assets/gambar/react.png',
@@ -54,33 +54,30 @@ export default function MyMain(params) {
                         'src/assets/gambar/mysql.png']}
                 />
                 <SkillCard 
-                nama="Devops" 
+                nama="Your Devops" 
                 icon={[' src/assets/gambar/vmware.png',
                         'src/assets/gambar/ansible.png',
                         'src/assets/gambar/docker.png',
                         'src/assets/gambar/nginx.png',
                         ]}
                 />
+                <SkillCard 
+                nama="Your Trusted" 
+                icon={[
+                        ]}
+                />
 
             </div>
 
-            <div className="w-full h-auto mt-2 mb-10 rounded-2xl pt-5">
+            <div className="w-full h-auto mt-2 mb-10  rounded-2xl pt-5">
                 <p className="text-[25px] text-center mb-8">
                     Want to learn with me ? check this video
                 </p>
+                <div className="w-50 justify-center flex m-auto h-12 items-center rounded-md bg-white border-1 border-neutral-200 mb-4 opacity-80">Views All Tutorials</div>
                 <div
                     id="youtube-card"
                     className="flex flex-nowrap gap-x-4 overflow-x-auto scroll-smooth whitespace-nowrap p-2 scrolling-touch"
                 >
-          
-        {/* <nav className="flex flex-col gap-y-10 mt-4">
-          {["Home", "About", "Service", "Work"].map((item) => (
-            <div key={item} className="border-b-2 flex justify-between border-gray-200">
-              <ul className="text-xl">{item}</ul>
-              <i className="ri-arrow-drop-down-fill scale-180"></i>
-            </div>
-          ))}
-        </nav> */}
                     {SubYt.map((n) => (
                         <div className="flex-shrink-0">
                             <YoutubeCard name={n["judul"]} gambar={n["gambar"]}/>

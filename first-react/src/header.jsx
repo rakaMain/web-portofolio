@@ -1,16 +1,20 @@
 import React from "react";
 import MiniCard from "./Card/minicard";
+import MyUl from "./headul";
 
 export default function MyHead() {
   const [shown, setShown] = React.useState(false);
+  
+
 
   const toggleNav = () => setShown((s) => !s);
+
 
   return (
     <>
       {/* HEADER */}
       <header className=" container  xl:rounded-b-2xl
-        fixed top-0 z-50 w-full h-18 flex items-center justify-end
+        fixed top-[-8px] z-50 w-full h-18 flex items-center justify-end
         px-6 gap-3 bg-[#fcfff2]  mx-auto border-b border-neutral-100
       ">
         <img src="src/assets/gambar/logo.png" className="h-18 me-auto w-auto" alt="" srcset="" />
@@ -38,7 +42,7 @@ export default function MyHead() {
       <div
         id="nav-bar"
         className={` 
-          fixed top-0 left-0 z-40 w-full h-full bg-white text-black
+          fixed top-0 left-0 z-40 w-full h-full pb-4 bg-white text-black
           flex flex-col pt-20 px-6 gap-3 
 
           /* animasi transform + opacity */
@@ -58,17 +62,26 @@ export default function MyHead() {
         </div>
 
         {/* Menu */}
-        <nav className="flex flex-col gap-y-10 mt-4">
+        <nav className="flex flex-col  gap-y-10 mt-4">
           {["Home", "About", "Service", "Work"].map((item) => (
-            <div key={item} className="border-b-2 flex justify-between border-gray-200">
-              <ul className="text-xl">{item}</ul>
-              <i className="ri-arrow-drop-down-fill scale-180"></i>
-            </div>
+            // <div className="h-auto">
+            // <div key={item} className=" flex justify-between border-gray-200 border-b-2">
+            //   <ul className="text-xl">{item}</ul>
+            //   <i
+            //   className={shown ? "ri-arrow-drop-up-fill scale-200" : "ri-arrow-drop-down-fill scale-200"}
+            //   onClick={toggleUL}
+            //  />
+            // </div>
+            // {shownUL && <div className="text-xl text-neutral-700">
+            //   <p className="mt-2">{item}</p>
+            // </div>}
+            // </div>
+            <MyUl item={item} />
           ))}
         </nav>
 
         {/* MiniCards */}
-        <div className="w-full h-auto flex flex-wrap gap-2  p-2 mt-10 rounded-xl">
+        <div className="w-full h-auto flex flex-wrap gap-2  p-2 mt-auto rounded-xl">
           <MiniCard name="Instagram" icon="ri-instagram-fill scale-200 m-auto" />
           <MiniCard name="Linkedin"  icon="ri-linkedin-fill scale-200 m-auto" />
           <MiniCard name="Youtube"   icon="ri-youtube-fill scale-200 m-auto" />
