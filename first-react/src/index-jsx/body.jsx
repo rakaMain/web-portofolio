@@ -7,7 +7,7 @@ import SubYt from "../data/datayoutube"
 
 export default function MyMain(params) {
     return(
-        <div className="w-5/6 mx-auto mt-22 sm:mt-30  rounded-md relative flex flex-col  text-black">
+        <div className="w-6/7 mx-auto mt-22 sm:mt-30  rounded-md relative flex flex-col  text-black ovehi">
             <div className="w-full flex items-center mb-4 mt-3">
                 <MiniCardMain
                     name="BNSP Certified"
@@ -18,21 +18,18 @@ export default function MyMain(params) {
             </p>
 
             <div className="w-full h-45 md:h-56 mt-5 rounded-2xl bg-white border border-neutral-200" />
-
-            <div className="w-full h-90 flex flex-col gap-y-3 mt-5 pt-5 rounded-2xl border border-neutral-200">
-                <div className=" w-full flex-1/2  bg-white border-b border-neutral-200">
-                    
+            <div className="overflow-hidden w-full h-130 flex flex-col mt-5 ">
+                <div className=" w-full flex flex-col h-auto gap-y-3  border-neutral-200">
+                    <div className=" bg-white h-60 flex justify-center items-center overflow-hidden border border-neutral-200 ">
+                      <img src=" src/assets/gambar/raka.jpg" alt="" srcset="" />
+                    </div>
                 </div>
-                <div className=" w-full flex-1/3 rounded-2xl flex p-4 bg-white  border-neutral-200" >
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, saepe?
+                <div className=" text-2xl w-full flex-2/3 rounded-2xl flex p-4  border-neutral-200" >
+                    👋 good day, i'm Raka Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </div>
-                
             </div>
 
             <div className="w-full h-auto mt-5 rounded-2xl pt-5">
-                <p className="text-[25px] text-center mb-4">
-                    Experience
-                </p>
                 <MediumCard />
             </div>
 
