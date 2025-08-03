@@ -20,7 +20,7 @@ export default function MyMain(params) {
             <div className="w-full h-45 md:h-56 mt-5 rounded-2xl bg-white border border-neutral-200" />
             <div className="overflow-hidden w-full h-130 flex flex-col mt-5 ">
                 <div className=" w-full flex flex-col h-auto gap-y-3  border-neutral-200">
-                    <div className=" bg-white h-60 flex justify-center items-center overflow-hidden border border-neutral-200 ">
+                    <div className=" bg-white h-60 flex justify-center items-center overflow-hidden ">
                       <img src=" src/assets/gambar/raka.jpg" alt="" srcset="" />
                     </div>
                 </div>
@@ -28,11 +28,14 @@ export default function MyMain(params) {
                     👋 good day, i'm Raka Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </div>
             </div>
-
-            <div className="w-full h-auto mt-5 rounded-2xl pt-5">
+            <div className=" text-2xl w-full flex-2/3 rounded-2xl flex p-4  border-neutral-200" >
+                🧤 experience
+            </div>
+            <div className="w-full h-auto mt-2 rounded-2xl pt-5">
                 <MediumCard />
             </div>
 
+            
             {/* Skills Section reverted to original layout */}
             <div className="w-full h-auto mt-6 rounded-2xl pt-5 space-y-4">
                 <SkillCard 
@@ -58,14 +61,15 @@ export default function MyMain(params) {
                         'src/assets/gambar/nginx.png',
                         ]}
                 />
-                <SkillCard 
-                nama="Your Trusted" 
-                icon={[
-                        ]}
-                />
+
 
             </div>
+            <div id="itnsa" className="w-full h-120 mt-2 mb-10  rounded-2xl pt-5 border-2 border-neutral-200" >
+                <section id="play list itnsa">
+                        project
+                </section>
 
+            </div>
             <div className="w-full h-auto mt-2 mb-10  rounded-2xl pt-5">
                 <p className="text-[25px] text-center mb-8">
                     Want to learn with me ? check this video
