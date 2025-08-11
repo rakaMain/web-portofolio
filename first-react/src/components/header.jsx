@@ -1,6 +1,6 @@
 import React from "react";
-import MiniCard from "./Card/minicard";
-import MyUl from "./headul";
+import MiniCard from "../data/minicard";
+import MyUl from "../components/headul";
 
 export default function MyHead() {
   const [shown, setShown] = React.useState(false);

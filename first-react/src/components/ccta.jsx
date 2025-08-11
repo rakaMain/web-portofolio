@@ -1,4 +1,4 @@
-import MiniCard from "./Card/minicard"
+import MiniCard from "../data/minicard"
 
 export default function MyCta(value){
     return(

@@ -1,8 +1,8 @@
-import MiniCardMain from "../Card/minicard"
-import MediumCard from "../Card/mediumcard"
-import SkillCard from "../Card/cardskill"
-import YoutubeCard from "../Card/cardyoutube"
-import MyProjject from "../Card/cardProject"
+import MiniCardMain from "/src/data/minicard"
+import MediumCard from "/src/data/mediumcard"
+import SkillCard from "/src/data/cardskill"
+import YoutubeCard from "/src/data/cardyoutube"
+import MyProjject from "/src/data/cardProject"
 
 import SubYt from "../data/datayoutube"
 
