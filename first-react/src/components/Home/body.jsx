@@ -4,7 +4,7 @@ import SkillCard from "/src/data/cardskill"
 import YoutubeCard from "/src/data/cardyoutube"
 import MyProjject from "/src/data/cardProject"
 
-import SubYt from "../data/datayoutube"
+import SubYt from "/src/data/datayoutube"
 
 export default function MyMain(params) {
     return(

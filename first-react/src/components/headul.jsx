@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router"
 
 export default function MyUl(props){
     const [shownUL, setShownUL] = React.useState(false);
@@ -7,7 +8,7 @@ export default function MyUl(props){
     <>
     <div className="transition-all duration-300 ease-in-out">
     <div key={props.item} className="  flex justify-between border-gray-200 border-b-2">
-        <ul className="text-xl">{props.item}</ul>
+        <Link to={`/${props.item}`}><p className="text-black text-xl">{props.item}</p></Link>
         <i
         className={shownUL ? "ri-arrow-drop-up-fill scale-200" : "ri-arrow-drop-down-fill scale-200"}
         onClick={toggleUL}
