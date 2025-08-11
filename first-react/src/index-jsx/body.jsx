@@ -2,6 +2,7 @@ import MiniCardMain from "../Card/minicard"
 import MediumCard from "../Card/mediumcard"
 import SkillCard from "../Card/cardskill"
 import YoutubeCard from "../Card/cardyoutube"
+import MyProjject from "../Card/cardProject"
 
 import SubYt from "../data/datayoutube"
 
@@ -14,7 +15,7 @@ export default function MyMain(params) {
                 />
             </div>
             <p className="text-[35px] mb-4">
-                Hello, I am Youtuber and need a job🤣 - <span className="text-[#E6FF28]">network, devOps and Python</span>
+                Hello, I am Freelance and youtuber - <span className="text-[#E6FF28]">network, devOps and Python</span>
             </p>
 
             <div className="w-full h-45 md:h-56 mt-5 rounded-2xl bg-white border border-neutral-200" />
@@ -69,19 +70,20 @@ export default function MyMain(params) {
 
 
             </div>
-            <div id="itnsa" className="w-full h-120 mt-2 mb-10  rounded-2xl pt-5" >
+            <div id="itnsa" className=" relative w-full h-auto mt-2 mb-10 overflow-hidden  rounded-2xl pt-5 flex flex-col " >
                 <section id="play list itnsa">
                 <p className=" text-2xl mb-1 w-full text-center ">✍ My Project</p>
-                <p className="mb-5 text-md text-neutral-500 text-center ">dikuasai dan sedang dipelajari</p>
-                <div className="border-2 border-neutral-200 h-25 rounded-2xl">
-
+                <p className="mb-5 text-md text-neutral-500 text-center ">inner Project</p>
+                <div>
+                <MyProjject />
+                <MyProjject />
                 </div>
                 </section>
 
             </div>
             <div className="w-full h-auto mt-2 mb-10  rounded-2xl pt-5">
                 <p className="text-[25px] text-center mb-8">
-                    Want to learn with me ? 🎞 check this video
+                    Want to learn with me ? check this video
                 </p>
                 <div className="w-50 justify-center flex m-auto h-12 items-center rounded-md bg-white border-1 border-neutral-200 mb-4 opacity-80">Views All Tutorials</div>
                 <div
