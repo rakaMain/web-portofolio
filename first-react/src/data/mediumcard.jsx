@@ -1,7 +1,7 @@
 export default function MediumCard(value){
     return(
         <>
-        <div className=" w-auto h-120 rounded-2xl flex flex-col items-center justify-center overflow-hidden bg-white border-1 border-neutral-200 relative">
+        <div className=" w-80 h-120 rounded-2xl flex flex-col items-center justify-center overflow-hidden bg-white border-1 border-neutral-200 relative">
             <div className=" h-2/3 w-full border-b-1 border-neutral-200 flex relative justify-center items-center flex-col overflow-hidden">
                 <img src="src/assets/gambaryt/unpad.jfif" alt="" srcset="" className="w-full" />
             </div>

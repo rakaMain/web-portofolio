@@ -1,7 +1,7 @@
 export default function MyProjject(props) {
     return (
         <>
-            <div className=" relative border-1 flex flex-col  overflow-hidden  border-neutral-200 rounded-2xl mb-4">
+            <div className=" relative border-1 flex flex-col w-75 overflow-hidden  border-neutral-200 rounded-2xl mb-4">
                     <div className=" absolute h-15 w-15 bg-neutral-200 rounded-2xl top-24 start-4"></div>
                    <div className=" h-35 bg-neutral-100"></div>
                    <div className=" p-2 pt-6 h-38">
