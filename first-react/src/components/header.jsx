@@ -13,9 +13,9 @@ export default function MyHead() {
   return (
     <>
       {/* HEADER */}
-      <header className=" container  xl:rounded-b-2xl
-        fixed top-[-8px] z-50 w-full h-18 flex items-center justify-end
-        px-6 gap-3 bg-[#fcfff2]  mx-auto border-b border-neutral-100
+      <header className=" container mx-auto  xl:rounded-b-2xl
+        fixed top-[-7px] z-50 w-full h-18 flex items-center justify-end
+        px-6 gap-3 bg-[#fcfff2] border-b border-neutral-100
       ">
         <img src="src/assets/gambar/logo.png" className="h-18 me-auto w-auto" alt="" srcset="" />
 

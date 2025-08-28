@@ -9,29 +9,37 @@ import SubYt from "/src/data/datayoutube"
 export default function MyMain(params) {
     return(
         <div className="w-6/7 mx-auto mt-22 sm:mt-30  rounded-md relative flex flex-col  text-black ovehi">
-            <div className="w-full flex items-center mb-4 mt-3">
-                <MiniCardMain
-                    name="BNSP Certified"
-                />
+
+
+            <div className="flex md:h-120 flex-col sm:flex-row ">
+                <div className="w-full flex items-start gap-y-4 sm:pe-5 flex-col   mb-4 mt-3">
+                    <MiniCardMain
+                        name="BNSP Certified"
+                    />
+                    <p className="text-[30px] ">
+                    Hello, I am Freelance and youtuber - <span className="text-[#E6FF28]">network, devOps and Python</span>
+                    </p>
+                </div>
+
+                <div className="w-full h-45 md:h-80 mt-5 rounded-2xl bg-white border border-neutral-200" />
             </div>
-            <p className="text-[35px] mb-4">
-                Hello, I am Freelance and youtuber - <span className="text-[#E6FF28]">network, devOps and Python</span>
-            </p>
 
-            <div className="w-full h-45 md:h-56 mt-5 rounded-2xl bg-white border border-neutral-200" />
 
-            <div className="overflow-hidden w-full h-110  rounded-2xl flex flex-col sm:h-auto sm:flex-row-reverse mt-6 ">
-                <div className=" w-full flex flex-col h-auto gap-y-3  border-neutral-200">
-                    <div className=" bg-white h-60 flex justify-center items-center rounded-2xl overflow-hidden ">
+
+
+            <div className="overflow-hidden w-full h-110 sm:mb-8 sm:gap-x-6 rounded-2xl flex flex-col sm:h-90 sm:flex-row-reverse mt-6 ">
+                <div className=" w-full flex rounded-2xl flex-col h-auto gap-y-3 bg-neutral-50  border-neutral-200">
+                    <div className="ms-auto bg-white h-60 sm:h-auto sm:w-76 flex justify-center items-center rounded-2xl overflow-hidden ">
                       <img src=" src/assets/gambar/raka2.jpg" alt="" srcset="" />
                     </div>
-                    
                 </div>
                 <div className=" w-full mt-2 flex-2/3 flex-col  rounded-2xl flex py-4  border-neutral-200" >
                     <p className="text-2xl text-start"> 👋 good day, i'm Raka Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                     <button className="w-40 text-black justify-center underline  flex  h-12 items-center rounded-md text-md mb-4 ">see more about me</button>
                 </div>
             </div>
+
+
 
             <div className="w-full sm:flex-row-reverse h-auto mt-4 flex justify-center sm:justify-between flex-col  sm:mt-0 rounded-2xl pt-5">
                 <div>
@@ -43,12 +51,12 @@ export default function MyMain(params) {
 
             
             {/* Skills Section reverted to original layout */}
-            <div className="w-full flex flex-col sm:flex-row sm:justify-between h-auto mt-6 rounded-2xl pt-5 space-y-4">
+            <div className="w-full flex flex-col sm:flex-row sm:gap-x-3 sm:justify-between h-auto mt-6 rounded-2xl pt-5 space-y-4">
                 <div className="flex-1/2">
                     <p className=" text-2xl mb-1 w-full text-center ">✍ My Skills</p>
                     <p className="mb-10 text-md text-neutral-500 text-center ">dikuasai dan sedang dipelajari</p>   
                 </div>
-                <div className=" flex-2/3">
+                <div className=" flex-2/3 ">
                     <SkillCard 
                     nama="Your IT Support" 
                     icon={[' src/assets/gambar/linux.png',
