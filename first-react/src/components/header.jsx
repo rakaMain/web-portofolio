@@ -2,89 +2,81 @@ import React from "react";
 import MiniCard from "../data/minicard";
 import MyUl from "../components/headul";
 
+// NOTE: adjust the logo import/path depending on your bundler (Vite/CRA/Next).
+// For CRA/Vite you can keep the path like '/src/assets/gambar/logo.png' or import it:
+// import logo from 'src/assets/gambar/logo.png'
+
 export default function MyHead() {
-  const [shown, setShown] = React.useState(false);
-  
-
-
-  const toggleNav = () => setShown((s) => !s);
-
+  const [open, setOpen] = React.useState(false);
+  const items = ["Home", "About", "Service", "Work"];
 
   return (
     <>
-      {/* HEADER */}
-      <header className=" container mx-auto  xl:rounded-b-2xl
-        fixed top-[-7px] z-50 w-full h-18 flex items-center justify-end
-        px-6 gap-3 bg-[#fcfff2] border-b border-neutral-100
-      ">
-        <img src="src/assets/gambar/logo.png" className="h-18 me-auto w-auto" alt="" srcset="" />
+      {/* Fixed header - stays on top while scrolling */}
+      <header className="fixed top-0 left-0 w-full z-50 bg-[#fcfff2]/95 backdrop-blur-sm border-b border-neutral-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
+          {/* LEFT: Logo */}
+          <div className="flex items-center flex-shrink-0">
+            {/* Use an <img> path that matches your project setup */}
+            <img src="/src/assets/gambar/logo.png" alt="logo" className="h-10 w-auto" />
+          </div>
 
-        <div className="hidden md:flex w-auto gap-x-10 me-10 ">
-          <ul className="text-black ">home</ul>
-          <ul className="text-black">about</ul>
-          <ul className="text-black">service</ul>
-          <ul className="text-black">work</ul>
+          {/* CENTER: navigation (centered on md and up) */}
+          <nav className="hidden md:flex flex-1 justify-center">
+            <ul className="flex gap-8">
+              {items.map((i) => (
+                <li key={i} className="text-sm font-medium text-black hover:text-neutral-600 cursor-pointer">
+                  {i}
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* RIGHT: CTA + mobile menu button */}
+          <div className="flex items-center gap-3">
+            <button className="flex items-center gap-2 bg-[#E6FF28] rounded-md h-10 px-3">
+              <span className="text-sm font-medium">Let's Talk</span>
+              <span className="bg-neutral-50 h-7 w-7 rounded-md inline-flex items-center justify-center" />
+            </button>
+
+            {/* Mobile menu toggle */}
+            <button
+              className="md:hidden p-2 rounded-md focus:outline-none"
+              aria-label="Toggle menu"
+              aria-expanded={open}
+              onClick={() => setOpen((s) => !s)}
+            >
+              <i className={open ? "ri-close-line text-2xl" : "ri-menu-line text-2xl"} />
+            </button>
+          </div>
         </div>
-
-
-        <div className="w-30 bg-[#E6FF28] rounded-md h-10 flex items-center justify-center gap-x-2 me-2">
-          <p>Lets Talk</p>
-          <div className="bg-neutral-50 h-7 w-7 rounded-md" />
-        </div>
-
-        <i
-          className={shown ? "ri-close-line scale-200 md:hidden" : "ri-menu-line scale-200 md:hidden"}
-          onClick={toggleNav}
-        />
       </header>
 
-      {/* NAV-BAR: selalu ter-mount, class berganti untuk animasi */}
+      {/* Mobile drawer / full-screen nav */}
       <div
-        id="nav-bar"
-        className={` 
-          fixed top-0 left-0 z-40 w-full h-full pb-4 bg-white text-black
-          flex flex-col pt-20 px-6 gap-3 
-
-          /* animasi transform + opacity */
-          transition-all duration-300 ease-in-out
-
-          /* ketika open */
-          ${shown 
-            ? " translate-x-0 opacity-98 pointer-events-auto" 
-            /* ketika close */
-            : " -translate-x-full opacity-0 pointer-events-none"
-          }
-        `}
+        className={`fixed inset-0 z-40 bg-white transition-transform duration-300 ease-in-out ${
+          open ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0 pointer-events-none"
+        }`}
       >
-        {/* Judul */}
-        <div className="mb-4 border-b-2 border-gray-200 h-16 mt-8 flex items-center">
-          <p className="text-xl">Learn with me</p>
-        </div>
+        <div className="max-w-md w-full h-full p-6 flex flex-col">
+          <div className="flex items-center justify-between mb-6">
+            <p className="text-xl font-semibold">Learn with me</p>
+            <button onClick={() => setOpen(false)} aria-label="Close menu">
+              <i className="ri-close-line text-2xl" />
+            </button>
+          </div>
 
-        {/* Menu */}
-        <nav className="flex flex-col  gap-y-10 mt-4">
-          {["Home", "About", "Service", "Work"].map((item) => (
-            // <div className="h-auto">
-            // <div key={item} className=" flex justify-between border-gray-200 border-b-2">
-            //   <ul className="text-xl">{item}</ul>
-            //   <i
-            //   className={shown ? "ri-arrow-drop-up-fill scale-200" : "ri-arrow-drop-down-fill scale-200"}
-            //   onClick={toggleUL}
-            //  />
-            // </div>
-            // {shownUL && <div className="text-xl text-neutral-700">
-            //   <p className="mt-2">{item}</p>
-            // </div>}
-            // </div>
-            <MyUl item={item} />
-          ))}
-        </nav>
+          <nav className="flex flex-col gap-6">
+            {items.map((item) => (
+              <MyUl key={item} item={item} />
+            ))}
+          </nav>
 
-        {/* MiniCards */}
-        <div className="w-full h-auto flex flex-wrap gap-2  p-2 mt-auto rounded-xl">
-          <MiniCard name="Instagram" icon="ri-instagram-fill scale-200 m-auto" />
-          <MiniCard name="Linkedin"  icon="ri-linkedin-fill scale-200 m-auto" />
-          <MiniCard name="Youtube"   icon="ri-youtube-fill scale-200 m-auto" />
+          <div className="mt-auto flex gap-2 flex-wrap">
+            <MiniCard name="Instagram" icon="ri-instagram-fill scale-200 m-auto" />
+            <MiniCard name="Linkedin" icon="ri-linkedin-fill scale-200 m-auto" />
+            <MiniCard name="Youtube" icon="ri-youtube-fill scale-200 m-auto" />
+          </div>
         </div>
       </div>
     </>
