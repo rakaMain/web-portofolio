@@ -18,7 +18,7 @@ export default function MyHead() {
           {/* LEFT: Logo */}
           <div className="flex items-center flex-shrink-0">
             {/* Use an <img> path that matches your project setup */}
-            <img src="/src/assets/gambar/logo.png" alt="logo" className="h-10 w-auto" />
+            <img src="/src/assets/gambar/logo.png" alt="logo" className="h-12 w-auto" />
           </div>
 
           {/* CENTER: navigation (centered on md and up) */}
@@ -33,7 +33,7 @@ export default function MyHead() {
           </nav>
 
           {/* RIGHT: CTA + mobile menu button */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 ms-auto">
             <button className="flex items-center gap-2 bg-[#E6FF28] rounded-md h-10 px-3">
               <span className="text-sm font-medium">Let's Talk</span>
               <span className="bg-neutral-50 h-7 w-7 rounded-md inline-flex items-center justify-center" />
