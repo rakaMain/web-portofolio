@@ -31,15 +31,19 @@ export default function MyMain(params) {
 
 
 
-            <div className="w-full sm:flex-row-reverse h-auto mt-4 flex justify-center sm:justify-between flex-col  sm:mt-0 rounded-2xl pt-5">
+            <div className="w-full sm:flex-row-reverse h-auto mt-6 flex justify-center sm:justify-between flex-col  sm:mt-0 rounded-2xl pt-5">
                 <div>
                 <p className=" text-2xl mb-1 text-center">🦺 Working Experience</p>
-                <p className="mb-4 text-md text-neutral-500 text-center ">pengalaman, magang dan pkl</p>
+                <p className="mb-4 text-md text-center font-thin ">pengalaman magang & kerja</p>
                 </div>
                 <MediumCard />
             </div>
 
             
+
+
+
+
             {/* Skills Section reverted to original layout */}
             <div className="w-full flex flex-col sm:flex-row sm:gap-x-3 sm:justify-between h-auto mt-6 rounded-2xl pt-5 space-y-4">
                 <div className="flex-1/2">
