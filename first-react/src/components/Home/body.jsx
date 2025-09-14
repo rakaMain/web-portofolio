@@ -47,8 +47,8 @@ export default function MyMain(params) {
             {/* Skills Section reverted to original layout */}
             <div className="w-full flex flex-col sm:flex-row sm:gap-x-3 sm:justify-between h-auto mt-6 rounded-2xl pt-5 space-y-4">
                 <div className="flex-1/2">
-                    <p className=" text-2xl mb-1 w-full text-center ">✍ My Skills</p>
-                    <p className="mb-10 text-md text-neutral-500 text-center ">dikuasai dan sedang dipelajari</p>   
+                    <p className=" text-2xl mb-1 w-full text-center ">👨‍💻 My Skills</p>
+                    <p className="mb-10 text-md text-center font-thin ">pengalaman kerja & magang</p>   
                 </div>
                 <div className=" flex-2/3 ">
                     <SkillCard 
@@ -77,14 +77,17 @@ export default function MyMain(params) {
                 </div>
 
             </div>
-            <div id="itnsa" className=" relative w-full h-auto mt-2 mb-10 overflow-hidden  rounded-2xl pt-5 flex flex-col " >
-                <section id="play list itnsa">
-                <p className=" text-2xl mb-1 w-full text-center ">✍ My Project</p>
-                <p className="mb-5 text-md text-neutral-500 text-center ">inner Project</p>
-                <div className=" flex flex-wrap justify-around">
-                <MyProjject />
-                <MyProjject />
-                </div>
+            <div id="itnsa" className=" relative w-full h-auto mt-2 mb-5 overflow-hidden  rounded-2xl pt-5 flex flex-col " >
+                <section id="play list itnsa" className=" flex flex-col">
+                    <p className=" text-2xl mb-1 w-full text-center ">🧱 My Project</p>
+                    <p className="mb-5 text-md text-center font-thin ">project project yang dibuat</p>
+                    <p className="mt-10 ">🏆 My Top Project</p>
+                    <div className=" flex flex-wrap justify-around py-4">
+                        <MyProjject />
+                        <MyProjject />
+                        <MyProjject />
+                    </div>
+                    <span className="text-[13px] text-center mx-auto">👉 see more about me</span>
                 </section>
 
             </div>
