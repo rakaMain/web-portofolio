@@ -102,7 +102,7 @@ export default function MyMain(params) {
                 >
                     {SubYt.map((n) => (
                         <div className="flex-shrink-0">
-                            <YoutubeCard name={n["judul"]} gambar={n["gambar"]}/>
+                            <YoutubeCard name={n["judul"]} gambar={n["gambar"]} kategori={n["kategori"]} views={n['viwes']}/>
                         </div>
                     ))}
         

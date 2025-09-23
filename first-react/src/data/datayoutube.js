@@ -1,14 +1,15 @@
 export default [
     {
-        judul: 'Cara Menginstall debian12 di vmware',
-        gambar: 'src/assets/gambaryt/debian 12.png'
+        judul: 'Install debian 12',
+        gambar: 'src/assets/gambaryt/debian 12.png',
+        viwes: '👁 100k',
+        kategori: '💻 IT System admin'
     },
     {
-        judul: 'Cara Setup Topologi dan lan Segment di VMware',
-        gambar: 'src/assets/gambaryt/vmware.png'
+        judul: 'Install debian 12',
+        gambar: 'src/assets/gambaryt/debian 12.png',
+        viwes: '👁 100k',
+        kategori: '💻 IT System admin'
     },
-    {
-        judul: 'Cara membuat dns server menggunakan bind9',
-        gambar: 'src/assets/gambaryt/bind9.png'
-    }
+
 ]
